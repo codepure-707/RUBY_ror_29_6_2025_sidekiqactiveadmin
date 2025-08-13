@@ -32,7 +32,7 @@ group :test do
   gem "database_cleaner-active_record"
   gem "launchy"
   gem "parallel_tests"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.2"
   gem "sqlite3", platform: :mri
 
   # Translations
