@@ -10,14 +10,14 @@ group :development, :test do
   gem "draper"
   gem "devise"
 
-  gem "rails", "~> 8.0.0"
+  gem "rails", "~> 8.0.2", ">= 8.0.2.1"
 
   gem "sprockets-rails"
   gem "ransack", ">= 4.2.0"
   gem "formtastic", ">= 5.0.0"
 
   gem "cssbundling-rails"
-  gem "importmap-rails"
+  gem "importmap-rails", ">= 2.2.0"
 end
 
 group :test do
@@ -27,18 +27,18 @@ group :test do
 
   gem "simplecov", require: false # Test coverage generator. Go to /coverage/ after running tests
   gem "simplecov-cobertura", require: false
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", ">= 4.0.0", require: false
   gem "cucumber"
   gem "database_cleaner-active_record"
   gem "launchy"
   gem "parallel_tests"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.2"
   gem "sqlite3", platform: :mri
 
   # Translations
   gem "i18n-tasks"
   gem "i18n-spec"
-  gem "rails-i18n" # Provides default i18n for many languages
+  gem "rails-i18n" , ">= 8.0.2" # Provides default i18n for many languages
 end
 
 group :rubocop do
@@ -47,7 +47,7 @@ group :rubocop do
   gem "rubocop-packaging"
   gem "rubocop-performance"
   gem "rubocop-rspec"
-  gem "rubocop-rails"
+  gem "rubocop-rails", ">= 2.33.0"
 end
 
 gemspec path: "."
