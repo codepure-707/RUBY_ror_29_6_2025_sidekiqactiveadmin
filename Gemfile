@@ -7,7 +7,7 @@ group :development, :test do
   gem "cancancan"
   gem "pundit"
 
-  gem "draper"
+  gem "draper", ">= 4.0.5"
   gem "devise"
 
   gem "rails", "~> 8.0.0"
@@ -36,7 +36,7 @@ group :test do
   gem "sqlite3", platform: :mri
 
   # Translations
-  gem "i18n-tasks"
+  gem "i18n-tasks", ">= 1.1.0"
   gem "i18n-spec"
   gem "rails-i18n" # Provides default i18n for many languages
 end
